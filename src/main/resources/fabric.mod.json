@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "direct-memory-access",
+  "version": "${version}",
+  "name": "Direct Memory Access",
+  "description": "Some critical code paths will be allowed to use direct memory access for performance. This often greatly reduces CPU overhead for chunk and entity rendering, but can make it harder to diagnose some bugs and crashes.",
+  "authors": [
+    "Noryea"
+  ],
+  "contact": {
+    "sources": "https://github.com/Noryea/allow-direct-memory-access"
+  },
+  "license": "LGPL-3.0-only",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.noryea.dma.Client"
+    ]
+  },
+  "mixins": [
+    "dma.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "java": ">=17"
+  }
+}

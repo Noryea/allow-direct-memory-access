@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.noryea.dma.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinBufferBuilder"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
